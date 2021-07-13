@@ -6,7 +6,7 @@ import CreateUser from './CreateUser';
 import UserList from './UserList';
 
 function countActiveUsers(users) {
-  console.log('활성 사용자 수를 (수정사항입니다) 세는중...');
+  console.log('활성 사용자 수를 (수정사항입니다)(branch3 수정) 세는중...');
   return users.filter(user => user.active).length;
 }
 
@@ -22,13 +22,13 @@ const initialState = {
       id: 2,
       username: 'tester',
       email: 'tester@example.com',
-      active: false
+      active: true // branch3 false->true
     },
     {
       id: 3,
       username: 'liz',
       email: 'liz@example.com',
-      active: false
+      active: true // branch3 false->true
     }
   ]
 };

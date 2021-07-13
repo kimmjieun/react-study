@@ -2,7 +2,7 @@ import React,{useEffect} from 'react';
 
 const User = React.memo(function User({ user, onRemove, onToggle }) {
   return (
-    <div>
+    <div className="test-branch3">
       <b
         style={{
           cursor: 'pointer',
