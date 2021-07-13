@@ -6,7 +6,7 @@ import CreateUser from './CreateUser';
 import UserList from './UserList';
 
 function countActiveUsers(users) {
-  console.log('활성 사용자 수를 세는중...');
+  console.log('활성 사용자 수를 (수정사항입니다) 세는중...');
   return users.filter(user => user.active).length;
 }
 function App() {
@@ -68,6 +68,7 @@ function App() {
     },
     [users]
   );
+  const test ="test";
   const onToggle = useCallback(
     id => {
       setUsers(
@@ -82,7 +83,7 @@ function App() {
 
   return (
     <>
-      <CreateUser
+      <CreateUser className="create-user"
         username={username}
         email={email}
         onChange={onChange}
