@@ -32,6 +32,7 @@ const initialState = {
     }
   ]
 };
+// 주석추가
 //리베이스테스트중
 function reducer(state, action) {
   switch (action.type) {
